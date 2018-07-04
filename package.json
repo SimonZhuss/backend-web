@@ -1,0 +1,33 @@
+{
+  "name": "huishi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1"
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "0.0.20",
+    "babel-core": "^6.26.3",
+    "cross-spawn": "^6.0.5",
+    "element-react": "^1.4.19",
+    "element-theme-default": "^1.4.13",
+    "express": "^4.16.3",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^3.3.2"
+  }
+}
